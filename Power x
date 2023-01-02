@@ -1,0 +1,19 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Power X", HidePremium = false, SaveConfig = true, ConfigFolder = "Power X"})
+
+OrionLib:MakeNotification({ 	Name = "Title!", 	Content = "Welcome to Power X", 	Image = "https://web.roblox.com/library/11873538493/Shadows", 	Time = 5 })
+
+local Tab = Window:MakeTab({ 	Name = "Power X", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
+
+local Section = Tab:AddSection({ 	Name = "scripts" })
+
+Tab:AddButton({ 	Name = "V-hub", 	Callback = function() loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()		 	end })
+
+Tab:AddToggle({ 	Name = "Soon", 	Default = false, 	Callback = function(Value) 		print("more-soon") 	end }) 
+
+Tab:AddColorpicker({ 	Name = "Colorpicker", 	Default = Color3.fromRGB(255, 0, 0), 	Callback = function(Value) 		print(Value) 	end	 }) 
+
+Tab:AddSlider({ 	Name = "menu", 	Min = 0, 	Max = 20, 	Default = 5, 	Color = Color3.fromRGB(255,255,255), 	Increment = 1, 	ValueName = "bananas", 	Callback = function(Value) 		print(Value) 	end })
+
+OrionLib:Init()
