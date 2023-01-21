@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
-local Window = OrionLib:MakeWindow({IntroText = "Power X", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
+local Window = OrionLib:MakeWindow({IntroText = "Power X", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X v2", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
 
 OrionLib:MakeNotification({ 	Name = "Power x", 	Content = "Welcome to Power X", 	Image = "https://web.roblox.com/library/11873538493/Shadows", 	Time = 5 })
 
@@ -38,15 +38,17 @@ local Tab = Window:MakeTab({ 	Name = "Player", 	Icon = "https://web.roblox.com/l
 
 local Tab = Window:MakeTab({ 	Name = "game-hubs", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
 
+Tab:AddButton({ 	Name = "MM2", 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()	end })
+
 Tab:AddButton({ 	Name = "block-fruits", 	Callback = function() 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GGhostVN/GhostLord/main/Main'))()	end })
 
 Tab:AddButton({ 	Name = "Evade", 	Callback = function() 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()	end })
 
 Tab:AddButton({ 	Name = "Legends-Of-Speed", 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/fareljr1/Hub/main/Loader"))()	end })
 
+Tab:AddParagraph("LegendsOfSpeedkey","key:SUBSCRIBERELZBLOX")
 
 Tab:AddButton({ 	Name = "Brookhaven", 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()	end })
-
 
 
 Tab:AddButton({ 	Name = "Pet-Simulator-X", 	Callback = function() loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/jmesfo0/RobloxScripts/main/psx-jmes.lua"))() end }) 
@@ -63,6 +65,9 @@ Tab:AddButton({ 	Name = "Fly-gui", 	Callback = function() loadstring("\108\111\9
 end})
 
 Tab:AddButton({ 	Name = "Pet-Simulator-X-tag", 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/IlllIlIIIlllIlIlllIIlIlllIlIIlllI/PartnerPSX/main/FakePartnerTag", true))()
+end})
+
+Tab:AddButton({ 	Name = "AdoptMe-luner-event-auto-farm", 	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/KodaLINEN/LFAM/main/auto'))()
 end})
 
 Tab:AddButton({ 	Name = "RTX-gui", 	Callback = function() loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))() 	
