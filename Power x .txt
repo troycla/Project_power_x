@@ -1,6 +1,6 @@
- local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
+local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
-local Window = OrionLib:MakeWindow({IntroText = "Power X", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X v2", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
+local Window = OrionLib:MakeWindow({IntroText = "Power X v3", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X v3", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
 
 OrionLib:MakeNotification({ 	Name = "Power x", 	Content = "Welcome to Power X v3", 	Image = "https://web.roblox.com/library/11873538493/Shadows", 	Time = 5 })
 
@@ -11,8 +11,6 @@ local Section = Tab:AddSection({ 	Name = "Other hubs" })
 Tab:AddButton({ 	Name = "V-hub", 	Callback = function() 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))() 	end })
 
 Tab:AddButton({ 	Name = "Moon-hub", 	Callback = function()  loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()	end })
-
-Tab:AddButton({ 	Name = "HOHOHUB", 	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()  end })
 
 local Tab = Window:MakeTab({ 	Name = "Scripts", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
 
@@ -39,8 +37,6 @@ local Tab = Window:MakeTab({ 	Name = "Player", 	Icon = "https://web.roblox.com/l
 local Tab = Window:MakeTab({ 	Name = "game-hubs", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
 
 Tab:AddButton({ 	Name = "MM2", 	Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/Ethanoj1/EclipseMM2/master/Script", true))()	end })
-
-Tab:AddButton({ 	Name = "block-fruits", 	Callback = function() 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GGhostVN/GhostLord/main/Main'))()	end })
 
 Tab:AddButton({ 	Name = "Evade", 	Callback = function() 	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Evade"))()	end })
 
@@ -97,5 +93,13 @@ Tab:AddButton({ 	Name = "popit-gui", 	Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Secrethumanbepro/Secrethumanbepro/main/Pov",true))()
 
 end})
+
+local Tab = Window:MakeTab({ 	Name = "blockfruits-hubs", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
+
+Tab:AddButton({ 	Name = "block-fruit-Neva-hub", 	Callback = function() 	loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()	end })
+
+Tab:AddButton({ 	Name = "block-fruit-Ghost-hub", 	Callback = function() 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GGhostVN/GhostLord/main/Main'))()	end })
+
+Tab:AddButton({ 	Name = "Block-fruits-HOHOHUB", 	Callback = function() loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()  end })
 
 OrionLib:Init()
