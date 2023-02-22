@@ -1,8 +1,8 @@
 local OrionLib = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Orion/main/source'))()
 
-local Window = OrionLib:MakeWindow({IntroText = "Power X v4", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X v3", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
+local Window = OrionLib:MakeWindow({IntroText = "Power X v4", IntroIcon ="https://web.roblox.com/library/11873538493/Shadows", Name = "Power X v4", HidePremium = false, SaveConfig = true, ConfigFolder = "Power x"})
 
-OrionLib:MakeNotification({ 	Name = "Power x", 	Content = "Welcome to Power X v4", 	Image = "https://web.roblox.com/library/11873538493/Shadows", 	Time = 5 })
+OrionLib:MakeNotification({ 	Name = "Power x", 	Content = "Welcome to Power X v4 -block fruits fixed -", 	Image = "https://web.roblox.com/library/11873538493/Shadows", 	Time = 5 })
 
 local Tab = Window:MakeTab({ 	Name = "Other-hub's", 	Icon = "https://web.roblox.com/library/11873538493/Shadows", 	PremiumOnly = false })
 
